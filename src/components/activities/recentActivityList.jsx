@@ -17,6 +17,8 @@ function RecentActivityList(props) {
       </div>
       <div>
         <RecentActivity />
+        <RecentActivity />
+        <RecentActivity />
       </div>
     </div>
   );

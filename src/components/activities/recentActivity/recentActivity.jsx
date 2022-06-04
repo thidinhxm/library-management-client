@@ -15,6 +15,18 @@ function RecentActivity(props) {
           <td> 10:00</td>
           <td> 450 Tshs.</td>
         </tr>
+        <tr>
+          <td>Jane Moses</td>
+          <td>St. Antdony’s</td>
+          <td> 10:00</td>
+          <td> 450 Tshs.</td>
+        </tr>
+        <tr>
+          <td>Jane Moses</td>
+          <td>St. Antdony’s</td>
+          <td> 10:00</td>
+          <td> 450 Tshs.</td>
+        </tr>
       </table>
     </div>
   );
