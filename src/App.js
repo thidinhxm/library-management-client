@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PopularCard from './components/card/popularCard';
+import PopularCard from './components/card/popularCard/popularCard';
+import StatisticCard from './components/card/statisticCard/statisticCard';
 import './globals.scss';
 
 import Home from './pages/home/Home';
@@ -16,7 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <PopularCard/>
+      <StatisticCard/>
     </div>
   );
 }
