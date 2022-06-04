@@ -17,7 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <StatisticCard/>
+      <PopularCard/>
     </div>
   );
 }
