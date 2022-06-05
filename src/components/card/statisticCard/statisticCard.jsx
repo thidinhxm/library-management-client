@@ -8,6 +8,7 @@ StatisticCard.propTypes = {
 
 function StatisticCard(props) {
   return (
+    
     <div className={style.cardContainer}>
       <div className={style.card}>
         <div className={style.cardIcon}>

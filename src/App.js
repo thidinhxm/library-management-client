@@ -19,7 +19,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <RecentActivityList/>
+      <StatisticCard/>
     </div>
   );
 }
