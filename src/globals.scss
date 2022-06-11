@@ -1,8 +1,9 @@
 $first-color: rgb(9, 150, 160);
 $second-color: rgb(7, 192, 188);
 
-.App {
-  margin: 0;
+* {
   padding: 0;
-  // box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
+

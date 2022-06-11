@@ -7,17 +7,6 @@
   --card-height: 115px;
 }
 
-* {
-  box-sizing: border-box;
-  // font-family: "Fira Code", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  color: black;
-  margin: 2rem;
-}
 .cardContainer{
   width: var(--card-width);
   height: var(--card-height);

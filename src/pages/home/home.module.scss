@@ -1,7 +1,10 @@
 .home {
   display: flex;
+  background-color: rgb(238, 233, 233);
 
-  .title {
-    color: red;
+  .main {
+    width: 88%;
+    height: 100vh;
+    margin: 0 24px;
   }
 }

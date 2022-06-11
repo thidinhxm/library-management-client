@@ -1,0 +1,32 @@
+.sidebar {
+  width: 12%;
+  height: 100vh;
+  background-image: linear-gradient(0, rgba(106, 106, 106, 0.5), rgba(75, 51, 11, 0.9)),
+  url('../../assets/img/sizebarBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+
+  .sizebarList {
+    position: absolute;
+    top: 12%;
+    font-size: 16px;
+    text-align: center;
+
+    .item {
+      margin: 5px 8px;
+      padding: 14px 32px;
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover, &.active {
+        cursor: pointer;
+        color: rgb(245, 165, 5);
+        background-color: #fff;
+        border-radius: 30px;
+      }
+    }
+  }
+}

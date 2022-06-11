@@ -11,15 +11,14 @@ import Login from './pages/login/Login';
 function App() {
   return (
     <div>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
             <Route path='login' element={<Login />}/>
           </Route>
         </Routes>
-      </BrowserRouter> */}
-      <StatisticCard/>
+      </BrowserRouter>
     </div>
   );
 }
