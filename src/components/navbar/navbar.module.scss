@@ -11,13 +11,18 @@
 
   .searchGroup {
     font-size: 16px;
-
+    display: flex;
+    
     .searchInput {
       width: 350px;
       height: 28px;
-      background-color: antiquewhite;
+      background-color: #F9F9F9;
       border: 1px solid #ccc;
       border-radius: 15px;
+
+      &:focus {
+        outline: none;
+      }
     }
     
     .searchBtn {
@@ -25,8 +30,8 @@
       height: 28px;
       border: 1px solid rgb(245, 165, 5);
       background-color: rgb(237, 166, 104);
-      border-radius: 15px;
       margin-left: -25px;
+      border-radius: 15px;
       color: #fff;
 
       &:hover {

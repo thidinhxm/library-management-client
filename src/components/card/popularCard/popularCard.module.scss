@@ -1,62 +1,58 @@
-
-
-:root {
-  --clr-primary: #651fff;
-  --clr-gray: #37474f;
-  --clr-gray-light: #b0bec5;
-  --card-width: 150px;
-  --card-height: 190px;
-}
-
 .wrapper{
   display: grid;
-  grid-template-columns: repeat(auto-fit, var(--card-width));
+  grid-template-columns: repeat(auto-fit, 150px);
   justify-content: center;
-}
-.card{
-  overflow: hidden;
-  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: #2A9D8F;
-  text-align: center;
-  border-radius: 14px;
-  position: relative;
-  margin: 0.5rem;
 
-}
-.img{
-  position: absolute;
-  height: 70px;
-  width: 70px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .card{
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px #b0bec5;
+    background-color: #2A9D8F;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    margin: 0.5rem;
 
+    .img{
+      position: absolute;
+      height: 70px;
+      width: 70px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .imgProfile{
+      width: 6rem;
+      clip-path: circle(40px at center);
+      margin-top: 0.5rem;
+    }
+    .name{
+      font-size: 10px;
+      line-height: 24px;
+    }
+    .amount{
+      font-weight: bold;
+      margin: 1rem 2rem;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    .position{
+      display: inline;
+      width: 70%;
+      border-style: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      background-color:rgba($color: #fff, $alpha:0.35);
+      line-height: 23px;
+    }
+  
+  }
 }
-.imgProfile{
-  width: 6rem;
-  clip-path: circle(40px at center);
-  margin-top: 0.5rem;
-}
-.name{
-  font-size: 10px;
-  line-height: 24px;
-}
-.amount{
-  font-weight: bold;
-  margin: 1rem 2rem;
-  font-size: 20px;
-  line-height: 22px;
-}
-.position{
-  display: inline;
-  width: 70%;
-  border-style: none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  background-color:rgba($color: #fff, $alpha:0.35);
-  line-height: 23px;
-}
+
+
+

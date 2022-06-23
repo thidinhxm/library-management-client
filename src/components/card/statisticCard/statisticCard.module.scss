@@ -1,65 +1,70 @@
-
-:root {
-  --clr-primary: #651fff;
-  --clr-gray: #37474f;
-  --clr-gray-light: #b0bec5;
-  --card-width: 265px;
-  --card-height: 115px;
-}
-
 .cardContainer{
-  width: var(--card-width);
-  height: var(--card-height);
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, 14rem);
+  width: 280px;
+  height: 115px;
   justify-content: center;
-  background-color: #F4A261;
+  
   border-radius: 14px;
   box-shadow: #37474f;
 
-}
-.card{
-  width: calc(var(--card-width) - 10px);
-  height: 100%;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 01);
-  text-align: center;
-  position: relative;
-  margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 14px 14px 0;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.cardIcon{
-  width: 50%;
-  height: var(--card-height);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &.student {
+    background-color: #F4A261;
+  }
 
-  
-}
-.cardInfo{
-  width: 50%;
-  height: calc(var(--card-height)/3*2);
-  float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #BEBEBE;
-  border-left: #BEBEBE solid 1px;
-}
+  &.bookTitle {
+    background-color: #E9C46A;
+  }
 
-.cardName{
-  font-size: 0.7rem;
-  font-weight: bold;
-}
-.cardAmount{
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 1rem 2rem;
-  
+  &.availableBook {
+    background-color: #E76F51;
+  }
+
+  &.occupiedBook {
+    background-color: #2A9D8F;
+  }
+
+  .card{
+    width: calc(280px - 10px);
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 01);
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 14px 14px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .cardIcon{
+      width: 50%;
+      height: 115px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cardInfo{
+      width: 50%;
+      height: calc(115px/3*2);
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #BEBEBE;
+      border-left: #BEBEBE solid 1px;
+
+      .cardName{
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
+      .cardAmount{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem 2rem;
+      }
+    }
+  }
+
 }

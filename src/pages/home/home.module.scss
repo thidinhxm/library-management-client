@@ -1,10 +1,17 @@
 .home {
   display: flex;
-  background-color: rgb(238, 233, 233);
+  background-color: F9F9F9;
 
   .main {
-    width: 88%;
+    width: 85%;
     height: 100vh;
     margin: 0 24px;
+
+    .staticsticCards {
+      display: flex;
+      padding: 20px;
+      padding-left: 0;
+      gap: 56px;
+    }
   }
 }
