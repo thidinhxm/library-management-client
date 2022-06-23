@@ -1,8 +1,4 @@
-import React from 'react';
 import styles from './recentActivity.module.scss';
-RecentActivity.propTypes = {
-
-};
 
 function RecentActivity(props) {
   return (

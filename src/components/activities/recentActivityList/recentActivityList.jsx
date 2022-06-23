@@ -1,12 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styles from "./recentActivityList.module.scss";
 import RecentActivity from '../recentActivity/recentActivity';
-RecentActivityList.propTypes = {
 
-};
-
-function RecentActivityList(props) {
+function RecentActivityList() {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.header}>

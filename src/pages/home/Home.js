@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar';
 import StatisticCard from '../../components/card/statisticCard/statisticCard';
 import RecentActivityList from '../../components/activities/recentActivityList/recentActivityList';
 // import PopularCard from '../../components/card/popularCard/popularCard'
+import Chart from '../../components/chart/Chart';
 const Home = () => {
   return (
     <div className={homeStyle.home}>
@@ -17,13 +18,14 @@ const Home = () => {
           <StatisticCard type='availableBook'/>
           <StatisticCard type='occupiedBook'/>
         </div>
-
-        <div className={homeStyle.activity}>
+        
+        <div className={homeStyle.charts}>
           <RecentActivityList />
+          <Chart aspect={2 / 1} title="Last 12 Months (Number of book borrowed)"/>
         </div>
+      {/* <PopularCard /> */}
       </div>
 
-      {/* <PopularCard /> */}
     </div>
   )
 }

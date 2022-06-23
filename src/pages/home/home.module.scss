@@ -7,11 +7,15 @@
     height: 100vh;
     margin: 0 24px;
 
-    .staticsticCards {
+    .staticsticCards, .charts {
       display: flex;
       padding: 20px;
       padding-left: 0;
       gap: 56px;
+    }
+
+    .charts {
+      padding: 5px 5px 5px 0px;
     }
   }
 }
