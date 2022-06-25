@@ -17,14 +17,19 @@ function App() {
           <Route path='/'>
             <Route index element={<Home />} />
             <Route path='login' element={<Login />}/>
-            <Route path='readers'>
-              <Route index element={<List />} />
-              <Route path='new' element={<New inputs={userInputs} title="Add New User"/>} />
+            <Route path='books' element={<List type='book' />}/>
+            <Route path='librarians'>
+              <Route index element={<List type='librarian' />} />
+              <Route path='new' element={<New inputs={userInputs} title="Add New Librarian"/>} />
               <Route path=':id' element={<Single />} />
             </Route>
-            <Route path='books' element={<List />}/>
-            <Route path='borrowCards' element={<List />}/>
-            <Route path='returnCards' element={<List />}/>
+            <Route path='readers'>
+              <Route index element={<List type='reader' />} />
+              <Route path='new' element={<New inputs={userInputs} title="Add New Reader"/>} />
+              <Route path=':id' element={<Single />} />
+            </Route>
+            <Route path='borrowCards' element={<List type='borrowCard' />}/>
+            <Route path='returnCards' element={<List type='returnCard' />}/>
           </Route>
         </Routes>
       </BrowserRouter>
