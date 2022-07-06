@@ -9,12 +9,13 @@ import occupiedBookIcon from '../../../assets/img/occupied-book.svg';
 
 function StatisticCard({ type }) {
   let data;
+  
   switch (type) {
-    case 'student': 
+    case 'reader': 
       data = {
         icon: studentIcon,
-        title: 'Students',
-        amount: '56',
+        title: 'Readers',
+        amount: '15',
         color: '#F4A261',
         type: style.student,
       };
@@ -23,7 +24,7 @@ function StatisticCard({ type }) {
       data = {
         icon: bookTitleIcon,
         title: 'Book Titles',
-        amount: '56',
+        amount: '33',
         color: '#E9C46A',
         type: style.bookTitle,
       };
@@ -32,7 +33,7 @@ function StatisticCard({ type }) {
       data = {
         icon: availableBookIcon,
         title: 'Available Books',
-        amount: '56',
+        amount: '70',
         color: '#E76F51',
         type: style.availableBook,
       };
@@ -41,7 +42,7 @@ function StatisticCard({ type }) {
       data = {
         icon: occupiedBookIcon,
         title: 'Occupied Books',
-        amount: '56',
+        amount: '50',
         color: '#2A9D8F',
         type: style.occupiedBook,
       };

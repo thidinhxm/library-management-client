@@ -43,10 +43,11 @@
 
   .userInfo {
     display: flex;
+    align-items: center;
+    
     font-size: 20px;
 
-    .notification,
-    .username {
+    .notification {
         color: rgb(237, 166, 104);
     }
 
@@ -54,22 +55,6 @@
         cursor: pointer;
         opacity: 0.9;
     }
-
-    .welcomeUser {
-        margin: 0 24px;
-        position: relative;
-
-        &::before {
-          content: "";
-          border-left: 2px solid #ccc;
-          height: 30px;
-          position: absolute;
-          left: -10px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-    }
-
     .userImg {
         width: 28px;
         height: 28px;

@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import loginStyle from './login.module.scss';
 
-import { login } from '../../redux/features/authSlide';
+import { login } from '../../redux/features/authSlice';
 const initialState = {
   username: '',
   password: '',
 }
 const Login = () => {
   const [formValue, setFormValue] = useState(initialState);
-  const { loading, error } = useSelector(state => ({...state.authSlide }));
   const { username, password } = formValue;
   const dispatch = useDispatch();
   const navigate = useNavigate();

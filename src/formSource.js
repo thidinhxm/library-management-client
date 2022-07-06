@@ -1,4 +1,37 @@
-export const userInputs = [
+export const bookInputs = [
+  {
+    id: 1,
+    label: "Title",
+    type: "text",
+    placeholder: "",
+  },
+  {
+    id: 2,
+    label: "Author",
+    type: "text",
+    placeholder: "",
+  },
+  {
+    id: 3,
+    label: "Quantity",
+    price: "Text",
+    placeholder: "",
+  },
+  {
+    id: 4,
+    label: "Category",
+    type: "text",
+    placeholder: "",
+  },
+  {
+    id: 5,
+    label: "Category",
+    type: "text",
+    placeholder: "",
+  }
+];
+
+export const librarianInputs = [
   {
     id: 1,
     label: "Username",
@@ -7,7 +40,7 @@ export const userInputs = [
   },
   {
     id: 2,
-    label: "Name and surname",
+    label: "Name",
     type: "text",
     placeholder: "John Doe",
   },
@@ -19,9 +52,9 @@ export const userInputs = [
   },
   {
     id: 4,
-    label: "Phone",
-    type: "text",
-    placeholder: "+1 234 567 89",
+    label: "DOB",
+    type: "date",
+    placeholder: "",
   },
   {
     id: 5,
@@ -36,41 +69,100 @@ export const userInputs = [
   },
   {
     id: 7,
-    label: "Country",
+    label: "Role",
     type: "text",
-    placeholder: "USA",
   },
 ];
 
-export const productInputs = [
+export const readerInputs = [
   {
     id: 1,
-    label: "Title",
+    label: "Username",
     type: "text",
-    placeholder: "Apple Macbook Pro",
+    placeholder: "john_doe",
   },
   {
     id: 2,
-    label: "Description",
+    label: "Name",
     type: "text",
-    placeholder: "Description",
+    placeholder: "John Doe",
   },
   {
     id: 3,
-    label: "Category",
-    type: "text",
-    placeholder: "Computers",
+    label: "Email",
+    type: "mail",
+    placeholder: "john_doe@gmail.com",
   },
   {
     id: 4,
-    label: "Price",
-    type: "text",
-    placeholder: "100",
+    label: "DOB",
+    type: "date",
+    placeholder: "",
   },
   {
     id: 5,
-    label: "Stock",
+    label: "Password",
+    type: "password",
+  },
+  {
+    id: 6,
+    label: "Address",
     type: "text",
-    placeholder: "in stock",
+    placeholder: "Elton St. 216 NewYork",
+  },
+  {
+    id: 7,
+    label: "Role",
+    type: "text",
   },
 ];
+
+export const borrowCardInputs = [
+  {
+    id: 1,
+    label: "Create Date",
+    type: "date",
+    placeholder: "",
+  },
+  {
+    id: 2,
+    label: "Expired Date",
+    type: "date",
+    placeholder: "",
+  },
+  {
+    id: 3,
+    label: "Reader",
+    type: "text",
+    placeholder: "",
+  },
+  {
+    id: 4,
+    label: "Book",
+    type: "text",
+    placeholder: "",
+  }
+];
+
+export const returnCardInputs = [
+  {
+    id: 1,
+    label: "Return Date",
+    type: "date",
+    placeholder: "",
+  },
+  {
+    id: 2,
+    label: "Borrow Card",
+    type: "text",
+    placeholder: "",
+
+  },
+  {
+    id: 3,
+    label: "Librarian",
+    type: "text",
+    placeholder: "",
+  }
+];
+

@@ -13,7 +13,7 @@ const Home = () => {
         <Navbar />
 
         <div className={homeStyle.staticsticCards}>
-          <StatisticCard type='student'/>
+          <StatisticCard type='reader'/>
           <StatisticCard type='bookTitle'/>
           <StatisticCard type='availableBook'/>
           <StatisticCard type='occupiedBook'/>
